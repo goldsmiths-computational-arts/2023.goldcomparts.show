@@ -1,25 +1,95 @@
+@font-face {
+    font-family: PixdorTwo;
+    src: url(../assets/fonts/PixdorTwo.ttf);
+}
+
+@font-face {
+    font-family: Flynnmomo;
+    src: url(../assets/fonts/Flynnmono.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
     width: 100%;
+    color: black;
+    font-family: Flynnmomo;
+    background-image: url(../assets/images/bg.jpeg);
+}
+
+
+p {
+    font-family: PixdorTwo;
+    color: white;
+    font-size: 72px;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
 }
 
 #poster {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
 }
 
 #video {
-        width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -100;
-            background-position: 50%;
-            background-size: cover;
-            margin: auto;
-            position: absolute;
-            top: -100%;
-            bottom: -100%;
-            left: -100%;
-            right: -100%;   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+    background-position: 50%;
+    background-size: cover;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+section {
+    padding: 30px 40px;
+}
+
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+nav {
+    /* width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#goldsmiths-logo {
+    width: 80px;
 }
