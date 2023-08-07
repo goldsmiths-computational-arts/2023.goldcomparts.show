@@ -16,10 +16,18 @@
 html,
 body {
     margin: 0;
-    /* width: 100vw; */
-    /* height: 100vh; */
+    width: 100vw;
+    height: 100vh;
     font-family: Flynnmomo;
     /* background-image: url(../assets/images/bg.jpeg); */
+}
+
+main, header, footer {
+    width: 100%;
+    /* max-width: 1400px; */
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    padding: 30px 3%;
 }
 
 h1 {
@@ -33,8 +41,7 @@ h1 {
 p {
     font-family: PixdorTwo;
     font-size: 32px;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
+    margin: 0.5em 0;
 }
 
 #poster {
@@ -57,22 +64,15 @@ p {
     background-position: 50%;
     background-size: cover;
     top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
 }
 
 header {
     display: flex;
     align-items: center;
-    top: 0;
-    padding: 30px;
-    width: 100%;
     justify-content: space-between;
-}
-
-section {
-    padding: 30px 40px;
 }
 
 footer {
@@ -81,8 +81,6 @@ footer {
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    padding: 30px;
 }
 
 footer img {
@@ -95,6 +93,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: end;
+    /* text-transform: uppercase; */
 }
 
 nav a {
@@ -116,6 +115,27 @@ a:hover {
     width: 80px;
 }
 
-@media (max-width: 1250px) {
-    /* … */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #nav-title {
+        font-size: 12px;
+        max-width: 80%;
+    }
 }
