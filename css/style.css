@@ -105,10 +105,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     background-color: #4143c2;
     border-radius: 30px;
-    /* opacity: 0.8; */
 }
 
 #goldsmiths-logo {
