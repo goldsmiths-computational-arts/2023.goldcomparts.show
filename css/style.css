@@ -194,11 +194,11 @@ nav a:hover, nav a.active {
 }
 
 @media (max-width: 480px) {
-    h1 {
+    .homepage .title {
         font-size: 72px;
     }
 
-    p {
+    .homepage p {
         font-size: 20px;
     }
 
