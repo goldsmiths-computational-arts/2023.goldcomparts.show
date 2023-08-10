@@ -19,15 +19,17 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: Flynnmomo;
-    /* background-image: url(../assets/images/bg.jpeg); */
 }
 
 main, header, footer {
     width: 100%;
-    /* max-width: 1400px; */
-    /* box-sizing: border-box; */
     margin: 0 auto;
     padding: 30px 3%;
+}
+
+main {
+    max-height: calc(100% - 100px);
+    overflow: scroll;
 }
 
 .center {
@@ -186,10 +188,8 @@ nav a:hover, nav a.active {
         z-index: 1;
     }
 
-
-    main {
-        max-height: calc(100% - 100px);
-        overflow: scroll;
+    #poem {
+        width: 100%;
     }
 }
 
@@ -212,7 +212,6 @@ nav a:hover, nav a.active {
     }
 
     #poem {
-        width: 100%;
         font-size: 12px;
     }
 
