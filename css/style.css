@@ -29,7 +29,8 @@ main, header, footer {
 
 main {
     max-height: calc(100% - 100px);
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .center {
@@ -158,6 +159,17 @@ nav a:hover, nav a.active {
     margin-top: 60px;
 }
 
+.img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container img {
+    max-height: 50px;
+    width: auto;
+    margin: 30px auto;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 100px;
@@ -226,6 +238,10 @@ nav a:hover, nav a.active {
 
     .coming-soon {
         font-size: 36px;
+    }
+
+    .img-container img {
+        max-height: 30px;
     }
 
 }
