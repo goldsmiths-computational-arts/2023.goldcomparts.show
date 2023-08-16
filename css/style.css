@@ -28,7 +28,7 @@ main, header, footer {
 }
 
 main {
-    max-height: calc(100% - 200px);
+    max-height: calc(100% - 100px);
     overflow: scroll;
 }
 
