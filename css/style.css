@@ -170,6 +170,10 @@ nav a:hover, nav a.active {
     margin: 30px auto;
 }
 
+#wt-logo {
+    max-height: 100px;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 100px;
@@ -242,6 +246,11 @@ nav a:hover, nav a.active {
 
     .img-container img {
         max-height: 30px;
+        margin: 20px auto;
+    }
+
+    #wt-logo {
+        max-height: 60px;
     }
 
 }
