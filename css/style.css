@@ -174,6 +174,22 @@ nav a:hover, nav a.active {
     max-height: 100px;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-row img {
+    width: 50%;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 100px;
@@ -251,6 +267,10 @@ nav a:hover, nav a.active {
 
     #wt-logo {
         max-height: 60px;
+    }
+
+    .flex-row img {
+        width: 100%;
     }
 
 }
